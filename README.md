@@ -35,6 +35,8 @@ Mine for example looks like this: `git@github.com:francisrafal/libft.git`
 5. Go to your terminal and in your "libft" directory, create a new remote called "all" that will be connected both to Vogsphere and GitHub
 ```
 git remote add all <your Vogsphere repository URL, i.e. git@vogsphere.42vienna.com:vogsphere/intra-uuid-f9895b4d-8fbe-4e62-8d1a-08a586f54a12-4462508-frafal>
+```
+```
 git remote set-url --add all <your GitHub repository URL, i.e. git@github.com:francisrafal/libft.git>
 
 ```
