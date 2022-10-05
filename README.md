@@ -38,7 +38,6 @@ git remote add all <your Vogsphere repository URL, i.e. git@vogsphere.42vienna.c
 ```
 ```
 git remote set-url --add all <your GitHub repository URL, i.e. git@github.com:francisrafal/libft.git>
-
 ```
 
 6. Check if you are successfully connected to both remotes.
