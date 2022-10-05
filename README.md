@@ -30,6 +30,29 @@ origin	git@vogsphere.42vienna.com:vogsphere/intra-uuid-f9895b4d-8fbe-4e62-8d1a-0
 
 Mine for example would look like this: git@github.com:francisrafal/libft.git
 
-5. Go to your terminal and in your "libft" directory type:
+5. Go to your terminal and in your "libft" directory, create a new remote called "all" that will be connected both to Vogsphere and GitHUb
 ```
-git remote set-url
+git remote set-url --add all <your GitHub repository URL, i.e. git@github.com:francisrafal/libft.git>
+git remote set-url --add all <your Vogsphere repository URL, i.e. git@vogsphere.42vienna.com:vogsphere/intra-uuid-f9895b4d-8fbe-4e62-8d1a-08a586f54a12-4462508-frafal>
+
+```
+
+6. Check if you are successfully connected to both remotes.
+
+```
+git remote -v
+```
+This should now look similar to this:
+
+all	git@vogsphere.42vienna.com:vogsphere/intra-uuid-f9895b4d-8fbe-4e62-8d1a-08a586f54a12-4462508-frafal (fetch)
+all	git@vogsphere.42vienna.com:vogsphere/intra-uuid-f9895b4d-8fbe-4e62-8d1a-08a586f54a12-4462508-frafal (push)
+all	git@github.com:francisrafal/libft.git (push)
+origin	git@vogsphere.42vienna.com:vogsphere/intra-uuid-f9895b4d-8fbe-4e62-8d1a-08a586f54a12-4462508-frafal (fetch)
+origin	git@vogsphere.42vienna.com:vogsphere/intra-uuid-f9895b4d-8fbe-4e62-8d1a-08a586f54a12-4462508-frafal (push)
+
+7. You can now push to both remotes to backup your project and have access to it from home:
+
+```
+git push all
+```
+
