@@ -60,6 +60,14 @@ origin	git@vogsphere.42vienna.com:vogsphere/intra-uuid-f9895b4d-8fbe-4e62-8d1a-0
 ```
 git push all
 ```
+
+## Common Problems When Accessing From Home:
+From @hu8813:
+I got errors at home while trying to clone using ssh, but after creating these folders it worked fine:
+mkdir $HOME/.ssh/sockets
+mkdir $HOME/.ssh/.tmp_session
+and for testing if it works: ssh -T  git@github.com
+
 ## Questions?
 
 Write me on Discord: Francis Rafal#1334
