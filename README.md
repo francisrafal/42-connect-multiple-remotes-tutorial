@@ -62,11 +62,16 @@ git push all
 ```
 
 ## Common Problems When Accessing From Home:
-From @hu8813:
+From [@hu8813] (https://www.github.com/hu8813):
 I got errors at home while trying to clone using ssh, but after creating these folders it worked fine:
+```
 mkdir $HOME/.ssh/sockets
 mkdir $HOME/.ssh/.tmp_session
-and for testing if it works: ssh -T  git@github.com
+```
+and for testing if it works:
+```
+ssh -T  git@github.com
+```
 
 ## Questions?
 
